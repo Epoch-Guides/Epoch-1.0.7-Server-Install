@@ -20,18 +20,18 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this 'call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";' and right BELOW it put 'call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";' then right below that put 'call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";'. 
 * Now go to the 'configVariables.sqf' in your Mission folder and edit any of the values inside and edit the 'variables.sqf' file in the 'init' folder inside your mission. 
 * If you want ZSC single currency, enable it in the variables by changing
-```sql
+```javascript
 Z_SingleCurrency = false; 
 to 
 Z_SingleCurrency = true;
 ```
 * Go to `Description.ext` in your mission folder -> at the bottom find:
- ```sql 
+ ```csharp 
  #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
 //#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
  ```
  and change to:
- ```sql 
+ ```c
  //#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
  #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
  ```
