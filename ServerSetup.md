@@ -47,4 +47,4 @@ If it has an error that  says `Include file z\addons\dayz_code\gui\description.h
 ## Done
 Your server should run and not have any problems now, if it does not start please refer to **Debugging**, if you are ready we will move on to editing your server, click below to return to the ReadMe.
 
-[Click Here to Continue](../writeup/README.md)
+[Click Here to Continue](../main/README.md)
