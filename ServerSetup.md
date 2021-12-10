@@ -45,6 +45,6 @@ I'm having you name files and folders certain things only so you can follow alon
 If it has an error that  says `Include file z\addons\dayz_code\gui\description.hpp not found` -> go to the '11_chernarus.cfg' and change the name to something like `TEST` -> then go to '11_chernarus.bat' then check all your spelling and directory changes, this error is typically due to the server not actually being directed to the Mission folder, the other possible problem is that you do no have a '$PREFIX$' file in your '@DayZ_Epoch_Server\addons\dayz_server' folder. After putting ‘TEST’ in the name, restart the server and see if the server name changes, if not, go to ‘11_chernarus.cfg` and check the line that says `template = “DayZ_Epoch_11.Chernarus”;’ and make sure it is directed to the correct folder.**
 
 ## Done
-Your server should run and not have any problems now, if it does not start please refer to Debugging, if you are ready we will move on to editing your server, click below to return to the ReadMe.
+Your server should run and not have any problems now, if it does not start please refer to **Debugging**, if you are ready we will move on to editing your server, click below to return to the ReadMe.
 
 [Click Here to Continue](../writeup/README.md)
