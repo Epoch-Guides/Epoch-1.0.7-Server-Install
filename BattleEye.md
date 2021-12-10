@@ -23,7 +23,7 @@ The reason we are only looking at and making exceptions for them is because the 
  ```
  Contains the problem variable. So let's start making the exception after it. Like this:
  ``` sql
-  !"};\n		};\n\n		if (-1 > -1) then {setViewDistance -1};\n		if (25 > -1) then {setTerrainGrid 25};\n		if (true"
+  !"};\n };\n\n if (-1 > -1) then {setViewDistance -1};\n if (25 > -1) then {setTerrainGrid 25};\n if (true"
 ```
 So we head to `scripts.txt` and find line 79, we then go up two to line 81 because the filters don't start on line 1, it says `//new2` and the first filter `1 addAction` is 0, in programming numbers don't start at 1, they start at 0. So now line 81 says `1 setViewDistance` and since that is the Function being called in the code, we know we are right, click on the line, hit the End key on your keyboard, and copy the exception to the end of the line. Now we know how to make exceptions for the Admin Tools random variable restrictions. Please continue to find as many as you can with the random variables and fix them. Once you are done fixing them, navigate to your Battle Eye folder and double click on `with console debug.bat` and it will then auto generate the exceptions needed for all of the other restrictions.
 
