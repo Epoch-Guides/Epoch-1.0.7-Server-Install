@@ -17,9 +17,14 @@ You will want to restart after finishing these.
 * Download and install [WinRAR](https://www.win-rar.com/fileadmin/winrar-versions/winrar/th/winrar-x64-602.exe) or [7 Zip](https://www.7-zip.org/a/7z2106-x64.exe)
 
 * Download and install [Visual Studio Code](https://code.visualstudio.com/docs/?dv=win) and [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.3/npp.8.1.9.3.Installer.x64.exe) we will be using both!
+
+*Download the [Setup Guide Files folder](https://drive.google.com/drive/folders/1ln5BWdNLfw1AcWfyHHCORErb2O-bQwIo) from the google drive to follow along with.
 ## Misc
 * Open your Network Configuration in your browser: We need to Port Forward 2302-2307; [How To Port Foward](https://www.hellotech.com/guide/for/how-to-port-forward), it's only necessary if you are planning on hosting from this machine, as some people may only want a test server. Remember you need to forward the ports for both TCP and UDP.
 
 * Search in Windows "Add or Remove Programs" -> Apps & Features -> Scroll down and look for Visual Studio C++ Redistributables 2008-2015 both x64 and x86, if you don't have them, install them. [Redistributables](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170), start from the earliest and work your way to the newest, x64.  
 
-[Continue...](../writeup/README.md)
+## Done
+You should now have all the files required to setup the server, we are ready to set them up and start the server, please click below to return to the ReadMe.
+
+[Click Here to Continue](../writeup/README.md)
