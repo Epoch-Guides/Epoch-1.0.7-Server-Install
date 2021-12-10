@@ -12,7 +12,7 @@ This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 
 
   If you have made it to the end here, Congrats!! You have succesfully setup an Arma 2: Operation Arrowhead DayZ Epoch 1.0.7 Server with Admin Tools and Battle Eye         Filters! Pat yourself on the back because that was alot, now go get something to eat and drink becuase you're going to want to add many mods and change many values!
 
-:)
+  :)
 
 
 
