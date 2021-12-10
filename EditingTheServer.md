@@ -19,13 +19,34 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Navigate back to the  "DayZ_Epoch_11.Chernarus" folder and go to the empty 'init' folder you make -> Right click -> Paste. Right click on the "dayz_code" folder in the workspace -> Remove folder from workspace. 
 * Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this 'call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";' and right BELOW it put 'call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";' then right below that put 'call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";'. 
 * Now go to the 'configVariables.sqf' in your Mission folder and edit any of the values inside and edit the 'variables.sqf' file in the 'init' folder inside your mission. 
-* If you want ZSC single currency, enable it in the variables by changing `Z_SingleCurrency = false;` to `true`. 
-* Go to `Description.ext` in your mission folder -> at the bottom find ``` sql #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders``` ->add a `//` right before the `#` -> now the line below it -> should be ``` sql //#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders ``` -> take out the `//` before the `#`.
+* If you want ZSC single currency, enable it in the variables by changing
+```sql
+Z_SingleCurrency = false; 
+to 
+Z_SingleCurrency = true;
+```
+* Go to `Description.ext` in your mission folder -> at the bottom find:
+ ```sql 
+ #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
+//#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
+ ```
+ and change to:
+ ```sql 
+ //#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
+ #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
+ ```
 
 #### Map Addons
 * We're going to add custom map addons server side. 
 * Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
-* Navigate to "dayz_server\init\server_functions.sqf" -> find 'call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";' then right BELOW it add '#include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup'. 
+* Navigate to "dayz_server\init\server_functions.sqf" -> find:
+```sql
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
+```
+then right BELOW it add:
+```sql
+#include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
+```
 * Now go to the 'build.sqf' script and type 'execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";' Restart your server and the map edits you made will work.
 
 #### Third Party Mods
