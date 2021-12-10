@@ -2,7 +2,7 @@
 This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 1.0.7 server with [BigEgg's Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch-Antihack-Admin-Tools). Use the quick navigation below to quickly get to each section of this guide. Please let us know if any changes are needed!
 ## Quick Navigation 
 * [Preparations/Prerequisites, Step 1](../writeup/Preparations.md) (Installing Arma2, Epoch, Port Fowarding, Downloads ect.)  
-* [Fresh Server Setup, Step 2](../writeup/Server Setup.md) (Making the server folder, running the server)
+* [Fresh Server Setup, Step 2](../writeup/ServerSetup.md) (Making the server folder, running the server)
 * [Editing the Server, Step 3](../writeup/EditingTheServer.md) (Changing variables for the server, adding mods (WAI), Admin Tools Install)
 * [Battle Eye Filters, Step 4](../writeup/BattleEye.md) (Making filter exceptions)
 
