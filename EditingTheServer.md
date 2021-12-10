@@ -27,7 +27,7 @@ call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
 call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 ```
 * Now go to the 'configVariables.sqf' in your Mission folder and edit any of the values inside and edit the 'variables.sqf' file in the 'init' folder inside your mission. 
-* If you want ZSC single currency, enable it in the variables by changing
+* If you want ZSC single currency, enable it in the configVariables by changing
 ```c
 Z_SingleCurrency = false; 
 ```
