@@ -11,7 +11,7 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * After making edits or addings mods to the server, remember in order to start server you type the 'start start' command in the terminal in VS Code, as the 'Start.bat' will repack your PBO's for you. 
 * If this isn't going to be a public server, but only for you and your friends and you don't need the security -> go to '11_chernarus.cfg' -> find line 'BattlEye = 1;' then set to 0, also find the line  `password = “”;` and make a good one!, if so you don’t need to follow the [Battle Eye Filters](../writeup/BattleEye.md), after installing the Admin Tools you are good to go!
 
-#### Value Edits
+## Value Edits
 * Open File Explorer -> DayZ_Server -> @DayZ_Epoch -> Addons -> right click 'dayz_code' -> PBO Manager -> "Extract to dayz_code\" -> drag the "dayz_code" folder into the VS Workspace -> Add to Workspace. 
 * Open it in the workspace -> find 'configVariables.sqf' -> right click -> Copy. 
 * Navigate to your "DayZ_Epoch_11.Chernarus" folder in the workspace -> right click -> Paste (or Ctrl + V). 
@@ -38,7 +38,7 @@ Z_SingleCurrency = true;
  #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
  ```
 
-#### Map Addons
+## Map Addons
 * We're going to add custom map addons server side. 
 * Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
 * Navigate to "dayz_server\init\server_functions.sqf" -> find:
@@ -51,11 +51,11 @@ then right BELOW it add:
 ```
 * Now go to the 'build.sqf' script and type 'execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";' Restart your server and the map edits you made will work.
 
-#### Third Party Mods
+## Third Party Mods
 For example you might see that you want Wicked AI mod on your server.
 * Most 3rd party mods from github have a `readme.md` that you can follow, the good ones give you the battleye exceptions you need as well, but if you add a mod that doesn't give you the battleye exceptions you will want to run 'BE_AEG.exe' if the kicks are due to 'script restriction' and any other filter .txt file restrictions you will have to add manually.
 
-#### Installing the Admin Tools
+## Installing the Admin Tools
 BigEgg made some great [Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch-Antihack-Admin-Tools) for the community to use and they work on Epoch 1.0.7! They let admins fly, teleport, and overall do what they need to do.
 * You will want to follow the `readme.md` on the github for the installation of the admin tools until you get to `Step 11: Drag all the BattlEye filters from the BattlEye folder into your server's BattlEye folder.`, do not do that, instead come back and continue.
 
