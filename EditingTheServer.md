@@ -17,7 +17,15 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Navigate to your "DayZ_Epoch_11.Chernarus" folder in the workspace -> right click -> Paste (or Ctrl + V). 
 * Now, while in that folder still -> right click on it -> New Folder -> name it 'init'. Now go back to the "dayz_code" folder -> init -> find 'variables.sqf' -> right click -> Copy. 
 * Navigate back to the  "DayZ_Epoch_11.Chernarus" folder and go to the empty 'init' folder you make -> Right click -> Paste. Right click on the "dayz_code" folder in the workspace -> Remove folder from workspace. 
-* Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this 'call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";' and right BELOW it put 'call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";' then right below that put 'call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";'. 
+* Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this:
+```ruby
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
+```
+and right BELOW it put:
+```ruby
+call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
+call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
+```
 * Now go to the 'configVariables.sqf' in your Mission folder and edit any of the values inside and edit the 'variables.sqf' file in the 'init' folder inside your mission. 
 * If you want ZSC single currency, enable it in the variables by changing
 ```c
