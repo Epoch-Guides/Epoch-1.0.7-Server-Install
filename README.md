@@ -1,4 +1,4 @@
-# Epoch-1.0.7-Server-Install with Admin Tools and BattleEye Filters.
+# Epoch 1.0.7 Server Install with Admin Tools and BattleEye Filters
 This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 1.0.7 server with [BigEgg's Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch-Antihack-Admin-Tools). Use the quick navigation below to quickly get to each section of this guide. Please let us know if any changes are needed!
 ## Quick Navigation 
 * [Preparations/Prerequisites, Step 1](../writeup/Preparations.md) (Installing Arma2, Epoch, Port Fowarding, Downloads ect.)  
