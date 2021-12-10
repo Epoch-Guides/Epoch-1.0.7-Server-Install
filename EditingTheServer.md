@@ -40,7 +40,7 @@ Z_SingleCurrency = true;
 * We're going to add custom map addons server side. 
 * Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
 * Navigate to "dayz_server\init\server_functions.sqf" -> find:
-```c
+```ruby
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 ```
 then right BELOW it add:
