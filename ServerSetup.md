@@ -1,4 +1,4 @@
-## Setting up Files and Getting the server Running
+# Setting up Files and Getting the server Running
 I'm having you name files and folders certain things only so you can follow along easier, you can name them whatever you please just remember when editing Directory names to change them to what you make them.
 
 ## Steps
