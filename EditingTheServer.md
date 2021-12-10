@@ -70,4 +70,4 @@ BigEgg made some great [Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch
 ## Done
 You are now done learning how to edit your server, please click Continue below and navigate to the `Battle Eye Filters` step.
 
-[Click Here to Continue](../writeup/README.md)
+[Click Here to Continue](../main/README.md)
