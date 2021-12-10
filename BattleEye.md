@@ -17,7 +17,7 @@ Now, we need to generate Exceptions for the restrictions that were created by th
 		if (true"
 ```
 with `BQ1vBKUInpSNuc` being the random variable and `setViewDistance` being the function.
-The reason we are only looking at and making exceptions for them is because the Admin Tools generates new variables every time the server starts again, so we have to add manual exceptions that will cover the code around them. All of the other restrictions should be fixed when we run the `BE_AEG.exe` by double clicking the `with console debug.bat` file. In order to fix this we need to make an exception that gets as much of the code as possible but also removing the variable. If you followed the [Battle Eye Filters](https://github.com/AsYetUntitled/Framework/wiki/BattlEye-Filters) you know we need to break this down do let's do it.
+The reason we are only looking at and making exceptions for them is because the Admin Tools generates new variables every time the server starts again, so we have to add manual exceptions that will cover the code around them. All of the other restrictions should be fixed when we run the `BE_AEG.exe` by double clicking the `with console debug.bat` file. In order to fix this we need to make an exception that gets as much of the code as possible but also removing the variable. If you followed the [Battle Eye Filters Guide](https://github.com/AsYetUntitled/Framework/wiki/BattlEye-Filters) you know we need to break this down do let's do it.
 ``` sql
  "] call BQ1vBKUInpSNuc;
  ```
