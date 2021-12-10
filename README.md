@@ -1,10 +1,10 @@
 # Epoch 1.0.7 Server Install with Admin Tools and BattleEye Filters
 This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 1.0.7 server with BigEgg's Anti Hack Admin Tools. Use the quick navigation below to quickly get to each section of this guide. Please let us know if any changes are needed!
 # Quick Navigation 
-* [Preparations/Prerequisites, Step 1](../writeup/Preparations.md) (Installing Arma2, Epoch, Port Fowarding, Downloads ect.)  
-* [Fresh Server Setup, Step 2](../writeup/ServerSetup.md) (Making the server folder, running the server)
-* [Editing the Server, Step 3](../writeup/EditingTheServer.md) (Changing variables for the server, adding mods (WAI), Admin Tools Install)
-* [Battle Eye Filters, Step 4](../writeup/BattleEye.md) (Making filter exceptions)
+* [Preparations/Prerequisites, Step 1](../main/Preparations.md) (Installing Arma2, Epoch, Port Fowarding, Downloads ect.)  
+* [Fresh Server Setup, Step 2](../main/ServerSetup.md) (Making the server folder, running the server)
+* [Editing the Server, Step 3](../main/EditingTheServer.md) (Changing variables for the server, adding mods (WAI), Admin Tools Install)
+* [Battle Eye Filters, Step 4](../main/BattleEye.md) (Making filter exceptions)
 
  I also have a [video](https://drive.google.com/file/d/1NKqIf7B2Q1mgo9Y_X-CUIKOaDoN92vJj/view?usp=sharing) you can watch that does everything in here, it's almost 2.5     hours long but it goes through the whole process.(When it gets to the parts where I get into game you can skip to where I get off the game, this [google doc](https://docs.google.com/document/d/1BjkqHHNs2oNdrGjsXEco7ZOyfL4W3X8xWW-QrC69rR8) has Timestamps for the video)  
 
