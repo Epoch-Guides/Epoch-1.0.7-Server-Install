@@ -18,7 +18,7 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Now, while in that folder still -> right click on it -> New Folder -> name it 'init'. Now go back to the "dayz_code" folder -> init -> find 'variables.sqf' -> right click -> Copy. 
 * Navigate back to the  "DayZ_Epoch_11.Chernarus" folder and go to the empty 'init' folder you make -> Right click -> Paste. Right click on the "dayz_code" folder in the workspace -> Remove folder from workspace. 
 * Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this:
-```javascript
+```ruby
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
 ```
 and right BELOW it put:
