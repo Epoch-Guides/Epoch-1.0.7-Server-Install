@@ -27,7 +27,7 @@ call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
 call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 ```
 * Now to make the value edits you would like, you'll be editing `init.sqf`, `configVariables.sqf`, and `variables.sqf`. 
-* If you want ZSC single currency for, enable it in the configVariables by changing
+* If you want ZSC single currency for example, enable it in the configVariables by changing
 ```c
 Z_SingleCurrency = false; 
 ```
