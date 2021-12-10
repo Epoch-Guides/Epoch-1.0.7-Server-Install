@@ -22,7 +22,9 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * If you want ZSC single currency, enable it in the variables by changing
 ```c
 Z_SingleCurrency = false; 
+```
 to 
+```c
 Z_SingleCurrency = true;
 ```
 * Go to `Description.ext` in your mission folder -> at the bottom find:
