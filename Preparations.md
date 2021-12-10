@@ -27,4 +27,4 @@ You will want to restart after finishing these.
 ## Done
 You should now have all the files required to setup the server, we are ready to set them up and start the server, please click below to return to the ReadMe.
 
-[Click Here to Continue](../writeup/README.md)
+[Click Here to Continue](../main/README.md)
