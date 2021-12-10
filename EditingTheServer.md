@@ -20,7 +20,7 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this 'call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";' and right BELOW it put 'call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";' then right below that put 'call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";'. 
 * Now go to the 'configVariables.sqf' in your Mission folder and edit any of the values inside and edit the 'variables.sqf' file in the 'init' folder inside your mission. 
 * If you want ZSC single currency, enable it in the variables by changing `Z_SingleCurrency = false;` to `true`. 
-* Go to 'Description.ext' in your mission folder -> at the bottom find ` #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders ` ->add a ` // ` right before the ` # ` -> now the line below it -> should be `//#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders` -> take out the `//` before the `#`.
+* Go to `Description.ext` in your mission folder -> at the bottom find ` #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders ` ->add a ` // ` right before the ` # ` -> now the line below it -> should be `//#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders` -> take out the `//` before the `#`.
 
 #### Map Addons
 * We're going to add custom map addons server side. 
