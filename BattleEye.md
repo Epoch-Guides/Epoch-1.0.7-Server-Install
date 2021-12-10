@@ -3,7 +3,7 @@ BattleEye reads `.txt` files from the folder, it then reads everything after the
 
 ## Generating Restrictions
 If you followed the 'Making Edits' in [this](../writeup/EditingTheServer.md) then you should have all of your filters inside the `DZE_Server_Config\BattleEye\scripts.txt`set to `1`'s. 
-* Go ahead and launch the game and join the server and when you get in, press F2 and do everything the admin menu allows you to. This will generate the restrictions(kicks) that would normally happen.
+* Go ahead and launch theserver and the game and join the server and when you get in, press F2 and do everything the admin menu allows you to. This will generate the restrictions(kicks) that would normally happen.
 * Once you are done testing every admin tool available, close the server. (which means spawn everything, teleport, ect. everything)
 * If you navigate to `DZE_Server_Config\Battle` you will notice a new file called `scripts.log` , this is filled with all the restrictions we've just generated. When a mod tries to call one of the Functions but does not have an Exception for it, BattleEye will kick the user. It will then note this in `scripts.log` with the exact code that tried to call the function in quotes, along with the filter number.
 
