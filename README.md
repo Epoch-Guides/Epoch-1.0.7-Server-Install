@@ -6,11 +6,11 @@ This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 
 * [Editing the Server, Step 3](../writeup/EditingTheServer.md) (Changing variables for the server, adding mods (WAI), Admin Tools Install)
 * [Battle Eye Filters, Step 4](../writeup/BattleEye.md) (Making filter exceptions)
 
-I also have a [video](https://drive.google.com/file/d/1NKqIf7B2Q1mgo9Y_X-CUIKOaDoN92vJj/view?usp=sharing) you can watch that does everything in here, it's almost 2.5 hours long but it goes through the whole process.(When it gets to the parts where I get into game you can skip to where I get off the game)
+⋅⋅⋅I also have a [video](https://drive.google.com/file/d/1NKqIf7B2Q1mgo9Y_X-CUIKOaDoN92vJj/view?usp=sharing) you can watch that does everything in here, it's almost 2.5 hours long but it goes through the whole process.(When it gets to the parts where I get into game you can skip to where I get off the game)
 
-If you need help, please join the Epoch discord server: https://discord.gg/0k4ynDDCsnMzkxk7 
+⋅⋅⋅If you need help, please join the Epoch discord server: https://discord.gg/0k4ynDDCsnMzkxk7 
 
-If you have made it to the end here, Congrats!! You have succesfully setup an Arma 2: Operation Arrowhead DayZ Epoch 1.0.7 Server with Admin Tools and Battle Eye Filters! Pat yourself on the back because that was alot, now go get something to eat and drink becuase you're going to want to add many mods and change many values!
+⋅⋅⋅If you have made it to the end here, Congrats!! You have succesfully setup an Arma 2: Operation Arrowhead DayZ Epoch 1.0.7 Server with Admin Tools and Battle Eye Filters! Pat yourself on the back because that was alot, now go get something to eat and drink becuase you're going to want to add many mods and change many values!
 
 :)
 
