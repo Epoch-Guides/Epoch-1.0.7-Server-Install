@@ -36,4 +36,4 @@ with `BQ1vBKUInpSNuc` being the random variable and `setViewDistance` being the 
 ## Done
 Restart your game and Server and rejoin, then leave, and check `scripts.log`, if it is not there, you are done. Please click continue below.
 
-[Continue](../writeup/README.md)
+[Continue](../main/README.md)
