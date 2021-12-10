@@ -1,4 +1,4 @@
-## Preparing to Make the Server
+# Preparing to Make the Server
 This is assuming you have administraitive rights on your computer, and that you have a basic understanding of how to navigate Windows and have Steam with Arma 2 and Arma 2: Operation Arrowhead in your library.
 You will want to restart after finishing these.
 ## Downloads
