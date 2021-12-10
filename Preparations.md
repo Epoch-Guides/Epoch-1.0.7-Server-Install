@@ -8,7 +8,7 @@ You will want to restart after finishing these.
 
 * Download Epoch [Server Files](https://drive.google.com/file/d/1jDn86sfTwcRae4NZgHK76k_CaY1jOUP2/view) for 1.0.7 
 
-* Download and install [MySQL 5.7](https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.7.36.1.msi) Configuring: Server Only, Standalone, Server Machine. Root password is important, make it good!. C:/ -> ProgramData -> MySQL -> MySQL Server 5.7 -> 'my.ini' right click and edit. Find Line 75 or 76:'[mysqld]', Right BELOW it, add "event_scheduler = ON", save.Open windows Services -> find MySQL 5.7 -> Restart it.
+* Downloading and installing MySQL, You can download the newest [version here](https://dev.mysql.com/downloads/windows/installer/8.0.html) or you can install [MySQL 5.7](https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.7.36.1.msi) like the old days. Configuring 5.7: Server Only, Standalone, Server Machine. Root password is important, make it good!. C:/ -> ProgramData -> MySQL -> MySQL Server 5.7 -> 'my.ini' right click and edit. Find Line 75 or 76:'[mysqld]', Right BELOW it, add "event_scheduler = ON", save.Open windows Services -> find MySQL 5.7 -> Restart it.
 
 * Download and install [HeidiSQL](https://www.heidisql.com/download.php?download=installer) 
 
