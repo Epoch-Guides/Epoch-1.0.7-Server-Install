@@ -14,7 +14,7 @@ If you've made it this far and succesfully loaded into your own server, congrats
 # Value Edits
 * Open File Explorer -> DayZ_Server -> @DayZ_Epoch -> Addons -> right click 'dayz_code' -> PBO Manager -> "Extract to dayz_code\" -> drag the "dayz_code" folder into the VS Workspace -> Add to Workspace. 
 * Open it in the workspace -> find 'configVariables.sqf' -> right click -> Copy. 
-* Navigate to your "DayZ_Epoch_11.Chernarus" folder in the workspace -> right click -> Paste (or Ctrl + V). 
+* Navigate to your "DayZ_Epoch_11.Chernarus" folder in the workspace -> if you don't already have a folder there called `dayz_code`, make it then ->right click -> Paste (or Ctrl + V). 
 * Now, while in that folder still -> right click on it -> New Folder -> name it 'init'. Now go back to the "dayz_code" folder -> init -> find 'variables.sqf' -> right click -> Copy. 
 * Navigate back to the  "DayZ_Epoch_11.Chernarus" folder and go to the empty 'init' folder you make -> Right click -> Paste. Right click on the "dayz_code" folder in the workspace -> Remove folder from workspace. 
 * Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this:
