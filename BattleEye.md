@@ -1,5 +1,5 @@
 # Making Battle Eye Exceptions
-BattleEye reads `.txt` files from the folder, it then reads everything after the function name, for example in `DZE_Server_Config\BattleEye\scripts.txt` line 40 says `1 execVM` , 1 being the filter style and `execVM` being the function, everything after are the Exceptions. Exceptions allow someone to execute that function in a certain way without being kicked by BattleEye. Please read the [Battle Eye Filters Guide](https://github.com/AsYetUntitled/Framework/wiki/BattlEye-Filters) to get a better understanding then come back.
+BattleEye reads filters from the `.txt` files inside the folder, it then reads everything after the function name, for example in `DZE_Server_Config\BattleEye\scripts.txt` line 40 says `1 execVM` , 1 being the filter style and `execVM` being the function, everything after are the Exceptions. Exceptions allow someone to execute that function in a certain way without being kicked by BattleEye. Please read the [Battle Eye Filters Guide](https://github.com/AsYetUntitled/Framework/wiki/BattlEye-Filters) to get a better understanding then come back.
 
 # Generating Restrictions
 If you followed the 'Making Edits' in [this](../writeup/EditingTheServer.md) then you should have all of your filters inside the `DZE_Server_Config\BattleEye\scripts.txt`set to `1`'s. 
