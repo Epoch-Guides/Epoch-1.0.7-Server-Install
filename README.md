@@ -6,7 +6,7 @@ This is a guide on how to install a fresh Arma 2:Operation Arrowhead DayZ Epoch 
 * [Editing the Server, Step 3](../main/EditingTheServer.md) (Changing variables for the server, adding mods (WAI), Admin Tools Install)
 * [Battle Eye Filters, Step 4](../main/BattleEye.md) (Making filter exceptions)
 
- I also have a [video](https://youtu.be/SuIGpzAtU0Y) you can watch that does everything in here, it's almost 2.5 hours long but it goes through the whole process. 
+ I also have a [youtube video](https://youtu.be/SuIGpzAtU0Y) you can watch that does everything in here, it's almost 2.5 hours long but it goes through the whole process. 
 
  If you need help, please join the Epoch discord server: https://discord.gg/0k4ynDDCsnMzkxk7 
 
