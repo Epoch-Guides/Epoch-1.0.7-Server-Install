@@ -1,6 +1,20 @@
 # Editing your new Epoch Server
 If you've made it this far and succesfully loaded into your own server, congrats! Now it's time to start modding it to fit what you want.But before you do that I HIGHLY recommend making backups of your "@DayZ_Epoch_Server" and your "MPMissions"  folder regularly. I'm going to add some simple mods to get you started.
+
+# Visual Studio Code
+**Throughout the Rest of the Guide, we will be using Visual Studio Code (VS Code) to edit various Scripts & Files. We recommend using VS Code as there are loads of handy shortcuts, extensions, and ways to make editing the Server Easier**
+* Download & Install [Visual Studio Code](https://code.visualstudio.com/docs/?dv=win) 
+* Open VS Code, and on the Top Left Side, you will see a Series of Icons down the Side, click the 5th One Down for Extensions. Search for and Install `SQF Language` by `Vladislav Sazonov`, then Search for And Install `SQFLint` by `SkaceKachna`. These 2 Extensions will give you Auto-Completion, Syntax Highlighting and Information about Script Commands when you hover over them
+* In File Explorer, Navigate to your `Server Folder -> root -> @DayZ_epoch_Server -> addons`; unpack the dayz_server.pbo File using PBO Manager
+* Back in to VS Code now; In the Top Left Corner, Click `File` and then `Add Folder to Workspace` Navigate to your `Server Folder -> root -> @DayZ_epoch_Server -> addons -> dayz_server` Folder and Click `Add`, Repeate for your `Server Folder -> root -> MPMissions -> DayZ_Epoch_11.Chernarus` Folder, and Repeat for your `Server Folder -> DZE_Server_Config` Folder
+* Click `File` and then `Save Workspace As..` Save it to a Location you can easily access. Now whenever you double click this Saved Workspace File, VS Code will open up with all the Folders & Files that you may want to edit for your Server
+
+
 # Making Edits
+* Download the [Setup Guide Files folder](https://drive.google.com/drive/folders/1ln5BWdNLfw1AcWfyHHCORErb2O-bQwIo) if you haven't already
+* Make sure you edit the `Start.bat` File; the Lines that Start with `set ` are Paths to the Server Root, Server Config, PBO Manager & BattlEye Filters, make sure you set these paths to match you Server Install as they are Currently set up to @RobbieW69 's Own Paths.
+* Copy the Edited `Start.bat` File in to your `DZE_Server_Config` Folder
+* In VS Code, in the Top Left Toolbar, click `Terminal` then `New Terminal`, Select `DZE_Server_Config` from the Dropdown. In the Bottom of VS Code, in the `Terminal` Tab, you can now Type `start start` and Press enter, and the `Start.bat` File will run, which will Restart your Server, Pack your Server & Mission PBOs, and Clear your Server RPT & BattlEye Logs
 * Before adding mods, you should go navigate to `DZE_Server_Config\BattleEye\scripts.txt`and change all the `5`s to `1`, this where Notepad++ comes in handy. 
 * Open the `scripts.txt` in VS Code, Ctrl + A, then Ctrl + C, now open up Notepad++ and hit Ctrl + V, everything in `scripts.txt` should be pasted into Notepad++. 
 * Now, In Notepad++ at the top there will be a bunch of icons, all the way to the right there is a Circle icon, it says `start recording` when you hover over it, go ahead and click it, once you do it will become unclickable. 
