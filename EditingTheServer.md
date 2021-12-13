@@ -3,33 +3,31 @@ If you've made it this far and succesfully loaded into your own server, congrats
 # Making Edits
 * Before adding mods, you should go navigate to `DZE_Server_Config\BattleEye\scripts.txt`and change all the `5`s to `1`, this where Notepad++ comes in handy. 
 * Open the `scripts.txt` in VS Code, Ctrl + A, then Ctrl + C, now open up Notepad++ and hit Ctrl + V, everything in `scripts.txt` should be pasted into Notepad++. 
-* Now, In Notepad++ at the top there will be a bunch of icons, all the way to the right there is a Circle icon, it says “start recording” when you hover over it, go ahead and click it, once you do it will become unclickable. 
-* Now go to line 2 -> begins with `5 addAction`, click anywhere on that line, now hit the Home key on your keyboard, now hit the Right arrow key, Backspace, type `1`, then Down arrow key. Once you’ve done this go back to the top and hit the Square button right next to the Circle button we pressed earlier to Stop Recording. 
+* Now, In Notepad++ at the top there will be a bunch of icons, all the way to the right there is a Circle icon, it says `start recording` when you hover over it, go ahead and click it, once you do it will become unclickable. 
+* Now go to line 2 -> begins with `5 addAction`, click anywhere on that line, now hit the Home key on your keyboard, now hit the Right arrow key, Backspace, type `1`, then Down arrow key. Once you’ve done this go back to the top and hit the Square button right next to the Circle button we pressed earlier to `Stop Recording`. 
 * Now to the right of them there is a Triangle Play button, you can click this 83 times, or you can click the double triangle play button, a dialog will come up asking how many time you want to run the macro you just created, I believe its 83, type `83` into the box, click run. 
 * Scroll down and make sure all of them were set to `1`, if any were missed go ahead and change them. 
 * Now go ahead and Ctrl + A, Ctrl + C, then navigate back to VS Code, and Ctrl + V (unless you closed it then you will need to highlight everything in the `scripts.txt` file that you have open in VS Code again before pasting into it. 
 * After making edits or addings mods to the server, remember in order to start server you type the 'start start' command in the terminal in VS Code, as the 'Start.bat' will repack your PBO's for you. 
-* If this is going to be a private server only for you and your friends and you don't need the security -> go to '11_chernarus.cfg' -> find line 'BattlEye = 1;' then set to 0, also find the line  `password = “”;` and make a good one!, if so you don’t need to follow the [Battle Eye Filters](../writeup/BattleEye.md), after installing the Admin Tools you are good to go!
+* If this is going to be a private server and you don't need the security -> go to '11_chernarus.cfg' -> find line 'BattlEye = 1;' then set to 0, also find the line  `password = “”;` and make a good one!, if so you don’t need to follow the [Battle Eye Filters](../writeup/BattleEye.md), after installing the Admin Tools you are good to go!
 
 # Value Edits
-* Open File Explorer -> DayZ_Server -> @DayZ_Epoch -> Addons -> right click 'dayz_code' -> PBO Manager -> "Extract to dayz_code\" -> drag the "dayz_code" folder into the VS Workspace -> Add to Workspace. 
-* Open it in the workspace -> find 'configVariables.sqf' -> right click -> Copy. 
-* Navigate to your "DayZ_Epoch_11.Chernarus" folder in the workspace -> if you don't already have a folder there called `dayz_code`, make it then ->right click -> Paste (or Ctrl + V). 
-* Now, while in that folder still -> right click on it -> New Folder -> name it 'init'. Now go back to the "dayz_code" folder -> init -> find 'variables.sqf' -> right click -> Copy. 
-* Navigate back to the  "DayZ_Epoch_11.Chernarus" folder and go to the empty 'init' folder you make -> Right click -> Paste. Right click on the "dayz_code" folder in the workspace -> Remove folder from workspace. 
-* Now go back to "DayZ_Epoch_11.Chernarus" folder and click on 'init.SQF'. Find this:
+* Open File Explorer -> `DayZ_Server\@DayZ_Epoch\addons` -> right click `dayz_code.pbo` -> PBO Manager -> `Extract to dayz_code\` -> drag the `dayz_code` folder into the VS Workspace -> Add to Workspace. 
+* Open it in the workspace -> find `configVariables.sqf` -> right click -> Copy. 
+* Navigate to your `DayZ_Epoch_11.Chernarus` folder in the workspace -> if you don't already have a folder there called `dayz_code`, make it then ->right click -> Paste (or Ctrl + V). 
+* Now, while in that folder still -> right click on it -> New Folder -> name it `init`. Now go back to the `dayz_code` folder -> init -> find `variables.sqf` -> right click -> Copy. 
+* Navigate back to the `DayZ_Epoch_11.Chernarus` folder and go to the empty `init` folder you made -> Right click -> Paste. Right click on the `dayz_code` folder in the workspace -> Remove folder from workspace. 
+* Now go back to `DayZ_Epoch_11.Chernarus` folder and click on `init.SQF`. Find this:
 ```ruby
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
 ```
 and right BELOW it put:
 ```ruby
 call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
-```
-```ruby
 call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 ```
 * Now to make the value edits you would like, you'll be editing `init.sqf`, `configVariables.sqf`, and `variables.sqf`. 
-* If you want ZSC single currency for example, enable it in the configVariables by changing:
+* If you want ZSC single currency for example, enable it in the `configVariables.sqf` by changing:
 ```ruby
 Z_SingleCurrency = false;
 ```
@@ -48,8 +46,8 @@ and change to:
 #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
 ```
 # Map Addons
-* We're going to add custom map addons server side. 
-* Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
+* We're going to add custom map addons server side, watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits.
+* Navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
 * Navigate to "dayz_server\init\server_functions.sqf" -> find:
 ```ruby
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
