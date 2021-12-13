@@ -8,6 +8,7 @@ You will want to restart after finishing these.
 
 * Download [Epoch 1.0.7 Server Files](https://drive.google.com/file/d/1jDn86sfTwcRae4NZgHK76k_CaY1jOUP2/view)
 
+
 ## Installing MySQL Server & Workbench (Database)
 * Download [MySQL Server](https://dev.mysql.com/downloads/file/?id=508935). Download the one that has the smallest size, once it has downloaded, run the Installer. Select the `Server only` Setup Type, Click Next and then Execute, you might have to install some Redistributables during this process. Follow the Installer Process until you reach the `Product Configuration` Section, Press Next Once, and you should come to the `Type and Networking` Page.
 
