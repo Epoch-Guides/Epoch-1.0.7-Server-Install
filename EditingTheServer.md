@@ -56,9 +56,9 @@ then right BELOW it add:
 ```hpp
 #include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
 ```
-* Now go to the 'build.sqf' script and type: 
-```c
-execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf"; 
+* Now go to the `build.sqf` script and type: 
+```ruby
+execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";
 ```
 Restart your server and the map edits you made will work.
 # Third Party Mods
