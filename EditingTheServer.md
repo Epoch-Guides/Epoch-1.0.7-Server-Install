@@ -31,7 +31,7 @@ call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 * Now to make the value edits you would like, you'll be editing `init.sqf`, `configVariables.sqf`, and `variables.sqf`. 
 * If you want ZSC single currency for example, enable it in the configVariables by changing:
 ```ruby
-Z_SingleCurrency = false; 
+Z_SingleCurrency = false;
 ```
 to 
 ```ruby
@@ -44,19 +44,19 @@ Z_SingleCurrency = true;
 ```
 and change to:  
 ```hpp
-//#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders 
-#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders  
+//#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
+#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
 ```
 # Map Addons
 * We're going to add custom map addons server side. 
 * Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
 * Navigate to "dayz_server\init\server_functions.sqf" -> find:
 ```ruby
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf"; 
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
  ```
 then right BELOW it add:  
 ```hpp
-#include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup  
+#include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
 ```
 * Now go to the 'build.sqf' script and type `execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";` Restart your server and the map edits you made will work.
 # Third Party Mods
