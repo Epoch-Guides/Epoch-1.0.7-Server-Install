@@ -34,6 +34,7 @@ with `BQ1vBKUInpSNuc` being the random variable and `setViewDistance` being the 
 * Now we know how to make exceptions for the Admin Tools random variable restrictions. Please continue to find as many as you can with the random variables and fix them. Once you are done fixing them, navigate to your Battle Eye folder and double click on `with console debug.bat` and it will then auto generate the exceptions needed for all of the other `scripts.txt` restrictions. Then you should be good to go!
 
 ## Done
-Restart your game and Server and rejoin, then leave, and check `scripts.log`, if it is not there, you are done. Please click continue below.
+Restart your game and Server and rejoin, then leave, and check `scripts.log`, if it is not there, you are done.
+And that is all we have got so far with this Guide!
 
-[Continue](../main/README.md)
+[Return to ReadMe](../main/README.md)
