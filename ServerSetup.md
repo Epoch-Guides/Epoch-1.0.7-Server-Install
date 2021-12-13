@@ -28,7 +28,7 @@ I'm having you name files and folders certain things only so you can follow alon
   - Now find the `DayZ_Server_Config` you made -> open it -> drag the `DZE_Server_Config` folder into the workspace as well. 
   - Now at the top click File -> Save Workspace As -> Name it something like `DayZ Code` -> Save it to your desktop. Now click File again and click on Auto Save. You are now done    setting up the text editor. (remember to drag the `folders` not the `.pbo` files into VS code)
 
-- [ ] Step 9: In VS Code -> In the worksapce -> click on `DZE_Server_Config` -> Click the arrow to open it -> go to '11_chernarus.bat'. 
+- [ ] Step 9: In VS Code -> In the worksapce -> click on `DZE_Server_Config` -> Click the arrow to open it -> go to `11_chernarus.bat`. 
    - Change the Directories to yours. (ie: '`-config=C:\DZE_Server_Config\11_chernarus.cfg`' will change to '`-config=YourDrive\DayZ_Server_Config\DZE_Server_Config\11_chernarus.cfg`'). 
    - Now open the `11_chernarus.cfg` -> change 'hostname = ;' to whatever you want to name it, this will be what pops up on the server list, below that you can also have a server password.
 
