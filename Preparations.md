@@ -28,4 +28,4 @@ The `Config Type` Option: If you are planning to Host this Server on a Home Mach
 
 ## Done
 We have done every we can up until this point. The Next Step is Setting up the Epoch Server!  
-[Click Here to Continue to Next Step](../main/ServerSetup.md) Or [Return to ReadMe](../main/README.md)
+[Click Here to Continue to Next Step](../main/ServerSetup.md) or [Return Home](../main/README.md)
