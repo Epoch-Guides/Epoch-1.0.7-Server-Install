@@ -32,21 +32,21 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Now, while in that folder still -> right click on it -> New Folder -> name it `init`. Now go back to the `dayz_code` folder -> init -> find `variables.sqf` -> right click -> Copy. 
 * Navigate back to the `DayZ_Epoch_11.Chernarus` folder and go to the empty `init` folder you made -> Right click -> Paste. Right click on the `dayz_code` folder in the workspace -> Remove folder from workspace. 
 * Now go back to `DayZ_Epoch_11.Chernarus` folder and click on `init.SQF`. Find this:
-```ruby
+```sqf
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
 ```
 and right BELOW it put:
-```ruby
+```sqf
 call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
 call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 ```
 * Now to make the value edits you would like, you'll be editing `init.sqf`, `configVariables.sqf`, and `variables.sqf`. 
 * If you want ZSC single currency for example, enable it in the `configVariables.sqf` by changing:
-```ruby
+```sqf
 Z_SingleCurrency = false;
 ```
 to 
-```ruby
+```sqf
 Z_SingleCurrency = true;
 ```
 * Go to `Description.ext` in your mission folder -> at the bottom find:
@@ -63,7 +63,7 @@ and change to:
 * We're going to add custom map addons server side, watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits.
 * Navigate to `dayz_server` in your workspace -> Right click -> Add new File -> name it `build.sqf` -> Add New Folder -> Name it `custom_buildings` -> grab your `mission.sqf` file from the map edit you did -> rename it to like `BalotaAddons.sqf`  for example if you made changes to Balota -> now place that file in the `custom_buildings` folder. 
 * Navigate to `dayz_server\init\server_functions.sqf` -> find:
-```ruby
+```sqf
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
  ```
 then right BELOW it add:  
@@ -71,7 +71,7 @@ then right BELOW it add:
 #include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
 ```
 * Now go to the `build.sqf` script and type: 
-```ruby
+```sqf
 execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";
 ```
 Restart your server and the map edits you made will work.
