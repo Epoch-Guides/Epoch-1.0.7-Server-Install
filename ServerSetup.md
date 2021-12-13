@@ -3,16 +3,17 @@ I'm having you name files and folders certain things only so you can follow alon
 
 ## Steps
 * Step 1: Open File Explorer -> Make a folder anywhere call it `DayZ_Server`.
-* 
+
 * Step 2: Open Arma2:OA directory -> Copy everything in there into `DayZ_Server`. 
-* 
+ 
 * Step 3: Open Arma2 Directory -> Copy `AddOns` folder only to `DayZ_Server`.
-* 
+ 
 * Step 4: Open File Explorer -> Make another folder not in the same Drive called `DayZ_Server_Config`.
-* 
+ 
 * Step 5: Open Epoch Server Files -> Move the `DZE_Server_Config` into the `DayZ_Server_Config` folder you made.
-* 
+ 
 * Step 6: Move all other Epoch Server Files into the `DayZ_Server` folder we made. `arma2oaserver.exe` should be in this folder. 
+
 * Step 7: Open HeidiSQL -> Make a new Session, call it `DayZServer`. 
 * Sign into the 'root' with the password you made on MySQL 5.7 -> right click on `DayZServer` at the top -> Create new -> database ->name it like `dayz_db` -> for Collation find the one called `utf8_general_ci` -> Create. 
 * Now a database named `dayz_db` should have popped up inside the drop down next to like `mysql` and `information_schema`. Click on it -> Over on the right side toward the top you'll see a blue button that says Query, click it -> a new empty window popped up -> Open `DayZ_Server`  folder -> find `SQL` folder -> open it, now drag `epoch.sql` into that area where the Query opened. Next to the Query tab it will say 'Database:dayz_db', ABOVE that there is a blue Play button, click it after putting the 'epoch.sql' file into the Query.
