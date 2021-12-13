@@ -28,10 +28,10 @@ I'm having you name files and folders certain things only so you can follow alon
 * Now navigate to the `HiveExt.ini` located in your `DZE_Server_Config` folder, go down to line 36, change the `database = ` to `database = dayz_db` then below that change `Username` equal to `newServer`, then below that change the password to the password you set.
 ##### Step 8
 * Open Visual Studio Code -> Navigate to the top left -> blocks icon called 'Extensions' -> type `SQF` -> Install `SQF Language` by Vladislav and `SQFLint` by Skace.
-* Open File Explorer -> Open `DayZ_Server` -> Open `@DayZ_Epoch_Server` -> addons -> Right click on `dayz_server.pbo` -> PBO Manager -> `Extract to dayz_server\`. 
-* Now go back to the main server folder -> MPMissions ->  right click on `DayZ_Epoch_11.Chernarus` -> PBO Manager -> `Pack into DayZ_Epoch_11.Chernarus.pbo`. 
+* Open File Explorer -> `DayZ_Server\@DayZ_Epoch_Server\addons` -> Right click on `dayz_server.pbo` -> PBO Manager -> `Extract to dayz_server\`. 
+* Now go back to the main server folder -> `DayZ_Server\MPMissions` ->  right click on `DayZ_Epoch_11.Chernarus` -> PBO Manager -> `Pack into DayZ_Epoch_11.Chernarus.pbo`. 
 * Now drag the `DayZ_Epoch_11.Chernarus` folder into VS Code on left side under `Workspace` -> Trust -> Add folder to workspace. 
-* Go back to the `@DayZ_Epoch_Server` again -> addons -> drag the `dayz_server` folder into the work space as well -> Trust -> Add to workspace. 
+* Go back to `DayZ_Server\@DayZ_Epoch_Server\addons` -> drag the `dayz_server` folder into the work space as well -> Trust -> Add to workspace. 
 * Now find the `DayZ_Server_Config` you made -> open it -> drag the `DZE_Server_Config` folder into the workspace as well. 
 * Now at the top click File -> Save Workspace As -> Name it something like `DayZ Code` -> Save it to your desktop. Now click File again and click on Auto Save. You are now done setting up the text editor. (remember to drag the `folders` not the `.pbo` files into VS code)
 ##### Step 9
