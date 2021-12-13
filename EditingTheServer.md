@@ -56,7 +56,10 @@ then right BELOW it add:
 ```hpp
 #include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
 ```
-* Now go to the 'build.sqf' script and type `execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";` Restart your server and the map edits you made will work.
+* Now go to the 'build.sqf' script and type: 
+> execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf"; 
+
+Restart your server and the map edits you made will work.
 # Third Party Mods
 For example you might see that you want Wicked AI mod on your server.
 * Most 3rd party mods from github have a `readme.md` that you can follow, the good ones give you the battleye exceptions you need as well, but if you add a mod that doesn't give you the battleye exceptions you will want to run 'BE_AEG.exe' if the kicks are due to 'script restriction' and any other filter .txt file restrictions you will have to add manually, this gets covered later in the `Battle Eye Filters` section.
