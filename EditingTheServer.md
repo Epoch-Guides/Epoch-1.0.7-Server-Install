@@ -62,7 +62,7 @@ execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";
 ```
 Restart your server and the map edits you made will work.
 # Third Party Mods
-For example you might see that you want Wicked AI mod on your server.
+For example you might see that you want [Wicked AI](https://github.com/worldwidesorrow/WICKED-AI) mod on your server.
 * Most 3rd party mods from github have a `readme.md` that you can follow, the good ones give you the battleye exceptions you need as well, but if you add a mod that doesn't give you the battleye exceptions you will want to run 'BE_AEG.exe' if the kicks are due to 'script restriction' and any other filter .txt file restrictions you will have to add manually, this gets covered later in the `Battle Eye Filters` section.
 # Installing the Admin Tools
 BigEgg made some great [Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch-Antihack-Admin-Tools) for the community to use and they work on Epoch 1.0.7! They let admins fly, teleport, and overall do what they need to do.
