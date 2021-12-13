@@ -9,7 +9,7 @@ If you've made it this far and succesfully loaded into your own server, congrats
 * Scroll down and make sure all of them were set to `1`, if any were missed go ahead and change them. 
 * Now go ahead and Ctrl + A, Ctrl + C, then navigate back to VS Code, and Ctrl + V (unless you closed it then you will need to highlight everything in the `scripts.txt` file that you have open in VS Code again before pasting into it. 
 * After making edits or addings mods to the server, remember in order to start server you type the 'start start' command in the terminal in VS Code, as the 'Start.bat' will repack your PBO's for you. 
-* If this isn't going to be a public server, but only for you and your friends and you don't need the security -> go to '11_chernarus.cfg' -> find line 'BattlEye = 1;' then set to 0, also find the line  `password = “”;` and make a good one!, if so you don’t need to follow the [Battle Eye Filters](../writeup/BattleEye.md), after installing the Admin Tools you are good to go!
+* If this is going to be a private server only for you and your friends and you don't need the security -> go to '11_chernarus.cfg' -> find line 'BattlEye = 1;' then set to 0, also find the line  `password = “”;` and make a good one!, if so you don’t need to follow the [Battle Eye Filters](../writeup/BattleEye.md), after installing the Admin Tools you are good to go!
 
 # Value Edits
 * Open File Explorer -> DayZ_Server -> @DayZ_Epoch -> Addons -> right click 'dayz_code' -> PBO Manager -> "Extract to dayz_code\" -> drag the "dayz_code" folder into the VS Workspace -> Add to Workspace. 
