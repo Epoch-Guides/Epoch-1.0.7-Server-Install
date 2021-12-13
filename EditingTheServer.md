@@ -28,45 +28,29 @@ call compile preprocessFileLineNumbers "dayz_code\configVariables.sqf";
 ```
 * Now to make the value edits you would like, you'll be editing `init.sqf`, `configVariables.sqf`, and `variables.sqf`. 
 * If you want ZSC single currency for example, enable it in the configVariables by changing
-```c
-Z_SingleCurrency = false; 
-```
+> Z_SingleCurrency = false; 
 to 
-```c
-Z_SingleCurrency = true;
-```
+> Z_SingleCurrency = true;
 * Go to `Description.ext` in your mission folder -> at the bottom find:
- ```c
- #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
-//#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
- ```
+ > #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
+> //#include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
  and change to:
- ```c
- //#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
- #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
- ```
-
+ > //#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp" // Normal traders
+ > #include "\z\addons\dayz_code\Configs\CfgServerTraderZSC\CfgServerTrader.hpp" // Single currency traders
 # Map Addons
 * We're going to add custom map addons server side. 
 * Watch my [video](https://youtu.be/y639xY7ekdc) on how to make your map edits -> navigate to "dayz_server" in your workspace -> Right click -> Add new File -> name it "build.sqf' -> Add New Folder -> Name it "custom_buildings" -> grab your 'mission.sqf' file from the map edit you did -> rename it to like 'BalotaAddons.sqf'  for example if you made changes to Balota -> now place that file in the "custom_buildings" folder. 
 * Navigate to "dayz_server\init\server_functions.sqf" -> find:
-```ruby
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
-```
+> call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 then right BELOW it add:
-```c
-#include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
-```
+> #include "\z\addons\dayz_server\build.sqf";//build custom map addons before player setup
 * Now go to the 'build.sqf' script and type `execVM "\z\addons\dayz_server\custom_buildings\BalotaAddons.sqf";` Restart your server and the map edits you made will work.
-
 # Third Party Mods
 For example you might see that you want Wicked AI mod on your server.
 * Most 3rd party mods from github have a `readme.md` that you can follow, the good ones give you the battleye exceptions you need as well, but if you add a mod that doesn't give you the battleye exceptions you will want to run 'BE_AEG.exe' if the kicks are due to 'script restriction' and any other filter .txt file restrictions you will have to add manually, this gets covered later in the `Battle Eye Filters` section.
-
 # Installing the Admin Tools
 BigEgg made some great [Anti Hack Admin Tools](https://github.com/BigEgg17/Epoch-Antihack-Admin-Tools) for the community to use and they work on Epoch 1.0.7! They let admins fly, teleport, and overall do what they need to do.
 * You will want to follow the `readme.md` on the github for the installation of the admin tools until you get to `Step 11: Drag all the BattlEye filters from the BattlEye folder into your server's BattlEye folder.`, do not do that, instead come back and continue.
-
 ## Done
 You are now done learning how to edit your server, please click Continue below and navigate to the `Battle Eye Filters` step.
 
